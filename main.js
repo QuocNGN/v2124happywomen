@@ -9,7 +9,10 @@ window.addEventListener('load', () => {
   // Giảm âm lượng xuống còn 30% (tức là nhỏ lại 70%)
   audioElement.volume = 0.3;
 
-  audioElement.play();
+  // Chờ người dùng nhấp chuột trước khi phát nhạc
+  document.addEventListener('click', () => {
+    audioElement.play();
+  });
 
   audioElement.onended = function () {
     audioElement.currentTime = 0;

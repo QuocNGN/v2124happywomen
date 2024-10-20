@@ -21,6 +21,10 @@ body {
   padding: 50px 0px;
 }
 
+audio {
+  display: none; /* Ẩn trình phát nhạc */
+}
+
 .night {
   position: fixed;
   left: 50%;
